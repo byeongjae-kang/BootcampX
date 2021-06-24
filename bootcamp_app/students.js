@@ -7,8 +7,6 @@ const pool = new Pool({
   database: 'bootcampx'
 });
 
-const cohort = process.argv[2];
-
 pool.query(`
 SELECT students.id as student_id, students.name as name, cohorts.name as cohort
 FROM students
